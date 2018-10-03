@@ -27,6 +27,7 @@ class NewPerson extends Component {
       .then(response => {
         if(response.status >= 200 && response.status < 300)
           this.setState({submitted: true});
+        console.log(response);
       });
   }
 
